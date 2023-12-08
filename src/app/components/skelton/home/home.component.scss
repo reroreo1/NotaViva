@@ -1,0 +1,33 @@
+/* note.component.scss */
+
+:host {
+    color: #ffffff;
+    background: transparent;
+    display: block; /* This ensures that the component takes up the full width */
+    margin: 0;
+    padding: 0;
+}
+
+main {
+    text-align: center;
+    padding: 4em;
+}
+
+.hero h1 {
+    font-size: 50px;
+    margin-bottom: 0.5em;
+}
+
+.hero p {
+    margin-bottom: 1em;
+}
+
+.hero button {
+    background-color: orangered;
+    color: #fff;
+    border: none;
+    padding: 1em 2em;
+    font-size: 1em;
+    border-radius: 2em;
+    cursor: pointer;
+}

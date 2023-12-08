@@ -1,0 +1,51 @@
+.main-content {
+  margin: 0 auto;
+}
+.editor {
+  border-radius: 15px;
+  border: 1px solid #5c5c5c;
+  padding : 15px 15px 15px 15px;
+  background: #1e1e1e;
+  min-height: 330px;
+  max-height: 500px;
+    overflow-y: auto;
+}
+.cont {
+  height: calc(100vh - 110px);
+  border-radius: 15px;
+  background: rgba(255, 255, 255, 0.1);
+}
+::ng-deep .ql-container.ql-snow{
+    border: none;
+  }
+::ng-deep .ql-editor {
+  font-family: "Poppins", sans-serif;
+  background-color: #1e1e1e;
+  font-weight: 100;
+  border: none;
+  color: #fff;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+::ng-deep .ql-toolbar {
+  border-radius: 4px;
+  font-family: "Poppins", sans-serif;
+  background: rgba(255, 255, 255,0.75);
+  color :white;
+  border-radius: 15px;
+}
+
+
+::ng-deep .ql-toolbar button:hover {
+  background-color: #dcdcdc;
+}
+
+::ng-deep .ql-editor.ql-blank::before {
+    color: white; 
+}
+.text-title{
+height: 30px;
+margin-left: 20px;
+text-decoration: underline;
+}

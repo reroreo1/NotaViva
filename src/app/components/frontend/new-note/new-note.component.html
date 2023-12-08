@@ -1,0 +1,23 @@
+<div class="main-content h-100 w-100">
+  <div class="row h-100 w-100">
+    <div [ngClass]="navbarOpen ? 'col-2' : 'col-3'" class="ms-0 ps-0">
+      <app-navbar-section
+        (navbarStateChange)="navbarOpen = $event"
+      ></app-navbar-section>
+    </div>
+    <div class="col-1"></div>
+    <div [ngClass]="navbarOpen ? 'col-9' : 'col-8'" class="cont d-flex">
+      <div class="row h-100">
+        <div class="col-12 h-30">
+          <app-audio-processor class="h-100 w-100"></app-audio-processor>
+        </div>
+        <div class="col-12 h-50 d-flex flex-column">
+          <div class="editor">
+            <div class="fs-6 text-white text-title">Notes :</div>
+            <quill-editor [(ngModel)]="editorContent"></quill-editor>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

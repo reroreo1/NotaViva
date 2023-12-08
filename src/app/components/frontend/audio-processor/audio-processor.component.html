@@ -1,0 +1,24 @@
+<div
+  class="w-100 h-100 d-flex flex-column justify-content-evenly align-items-center"
+>
+  <div id="main" class="w-100">
+    <div class="audio-control-panel w-100">
+      <div class="audio-timer" id="audioTimer">00:00</div>
+      <div class="audio-visualizer">
+        <div id="audioBar" #audioBar class="bar"></div>
+      </div>
+      <button
+        class="mic-button"
+        id="record"
+        #recordButton
+        (click)="toggleRecording()"
+      >
+        <i class="bi bi-mic-fill"></i>
+      </button>
+    </div>
+  </div>
+  <div class="w-100 input p-12 scrollable-paragraph">
+    <div class="fs-6 text-white text-title">Aperçu :</div>
+    <p class="text-white">{{ inputText }}</p>
+  </div>
+</div>
